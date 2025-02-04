@@ -23,16 +23,46 @@ function verificarEdad() {
 }
 
 function verificarParImpar() {
+
     let numero3 = document.getElementById('numero3').value;
 
     let numeroconvertido = parseInt(numero3)
 
     if (numeroconvertido % 2 === 0) {
         
-        alert(" Es par ")
+       document.getElementById('mensajeParImpar').innerText = `El numero ${numeroconvertido} es par`;
     } else {
-        alert(" No es  par ")
+        document.getElementById('mensajeParImpar').innerText = `El numero ${numeroconvertido} es Impar`;
     }
 
     console.log(numeroconvertido)
 }
+
+
+function evaluarNota() {
+    
+    let nota = document.getElementById('nota').value;
+
+    let numeroconvertido = parseInt(nota)
+    console.log(numeroconvertido)
+
+    //mayor de 90 excelente nota
+    //mayor a 70 aprobado 
+    //menor 70 reprobado 
+    if (numeroconvertido >= 90) {
+       // alert("excelente nota")
+        document.getElementById('mensajeNota').innerText = `El resultado es excelente nota`;
+    }
+    else if(numeroconvertido >= 70){
+       // alert("aprobado")
+        document.getElementById('mensajeNota').innerText = `El resultado es aprobado`;
+    }     
+    else {
+        //alert("reprobado")
+        document.getElementById('mensajeNota').innerText = `El resultado es reprobado`;
+    }
+}
+
+//parse int
+//parseFloat decimales
+//monto * 0.9
