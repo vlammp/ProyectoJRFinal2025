@@ -1,0 +1,40 @@
+
+:root{
+  --fondogradiante:linear-gradient(to bottom, #dd2476, #ff512f);  
+  --colorglobal:#dd2476;
+  --TextClaro: white;
+
+}
+
+body{
+    font-family: "Titillium Web", sans-serif;
+}
+
+main{
+
+    height: auto !important;
+    height: 100%;
+    min-height: 80vh;
+}
+header{
+    background: var(--colorglobal);
+    color: var(--TextClaro);
+    background: var(--fondogradiante);
+}
+footer{
+
+    background: rgba(0, 0, 0, 0.815);
+}
+
+.iconos i{
+    color:  var(--colorglobal);
+   
+}
+
+.texto-cortado {
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 🔹 Número de líneas antes de cortar */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

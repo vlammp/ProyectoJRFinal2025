@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Inicio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Inicio: Navbar  100% -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" id="IdNav"> </nav>
+    <!-- Fin: Navbar  -->   
+    
+
+
+    <!-- Inicio: Container 90% -->
+    <div class="container">
+
+
+        <!-- Inicio: Header  -->
+        <header id="Header" class="mb-5 mt-5"></header>
+        <!-- Fin: Header  -->
+
+
+        <!-- Inicio: Main  -->
+        <main class="mt-5">
+            <div class="container d-flex justify-content-center ">
+                <div class="w-50">
+                   
+                
+                    <!-- Verificación de Mayoría de Edad -->
+                    <section class="mt-4">
+                        <h2>Verificación de Mayoría de Edad</h2>
+                        <p>Ingresa tu edad y país para saber si eres mayor de edad.</p>
+                        <div class="form-group">
+                            <label for="edad">Edad</label>
+                            <input type="number" class="form-control" id="edad" placeholder="Ingrese su edad">
+                        </div>
+                        <div class="form-group">
+                            <label for="pais">País</label>
+                            <input type="text" class="form-control" id="pais" placeholder="Ingrese su país">
+                        </div>
+                        <button type="button" class="btn btn-primary mt-2" onclick="verificarEdad()">Verificar</button>
+                        <div class="mt-3 text-center">
+                            <h4 id="mensajeEdad"></h4>
+                        </div>
+                    </section>
+                
+                    <!-- Verificación de Número Par o Impar -->
+                    <section class="mt-4">
+                        <h2>Verificación de Número Par o Impar</h2>
+                        <p>Ingresa un número para verificar si es par o impar.</p>
+                        <div class="form-group">
+                            <label for="numero3">Número</label>
+                            <input type="number" class="form-control" id="numero3" placeholder="Ingrese un número">
+                        </div>
+                        <button type="button" class="btn btn-primary mt-2" onclick="verificarParImpar()">Verificar</button>
+                        <div class="mt-3 text-center">
+                            <h4 id="mensajeParImpar"></h4>
+                        </div>
+                    </section>
+                
+                    <!-- Clasificación de Notas -->
+                    <section class="mt-4">
+                        <h2>Clasificación de Notas</h2>
+                        <p>Ingresa tu nota para saber si aprobaste, reprobaste o tienes una excelente calificación.</p>
+                        <div class="form-group">
+                            <label for="nota">Nota</label>
+                            <input type="number" class="form-control" id="nota" placeholder="Ingrese su nota">
+                        </div>
+                        <button type="button" class="btn btn-primary mt-2" onclick="evaluarNota()">Evaluar</button>
+                        <div class="mt-3 text-center">
+                            <h4 id="mensajeNota"></h4>
+                        </div>
+                    </section>
+                
+                    <!-- Cálculo de Descuento en Compras -->
+                    <section class="mt-4">
+                        <h2>Cálculo de Descuento</h2>
+                        <p>Si tu compra supera los $100, recibirás un descuento del 10%.</p>
+                        <div class="form-group">
+                            <label for="monto">Monto de Compra</label>
+                            <input type="number" class="form-control" id="monto" placeholder="Ingrese el monto de la compra">
+                        </div>
+                        <button type="button" class="btn btn-primary mt-2" onclick="calcularDescuento()">Calcular Descuento</button>
+                        <div class="mt-3 text-center">
+                            <h4 id="mensajeDescuento"></h4>
+                        </div>
+                    </section>
+                
+                    <!-- Verificación rápida de Mayor o Menor de Edad -->
+                    <section class="mt-4">
+                        <h2>Verificación Rápida de Mayoría de Edad</h2>
+                        <p>Ingresa tu edad para saber si eres mayor o menor de edad.</p>
+                        <div class="form-group">
+                            <label for="edadSimple">Edad</label>
+                            <input type="number" class="form-control" id="edadSimple" placeholder="Ingrese su edad">
+                        </div>
+                        <button type="button" class="btn btn-primary mt-2" onclick="verificarMayorMenor()">Verificar</button>
+                        <div class="mt-3 text-center">
+                            <h4 id="mensajeEdadSimple"></h4>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+        <!-- Fin: Main  -->
+    </div>
+    <!-- Fin: Container  -->
+
+    <!-- Inicio: Footer  100% -->
+    <footer id="IdFooter" class="text-center mt-5">  </footer>
+    <!-- Fin: Footer  -->
+
+
+
+
+
+
+    <!-- Scripts General  -->
+    <script type="module" src="JS/General/Nav.js"></script>
+    <script type="module" src="JS/General/Footer.js"></script>
+    <script type="module" src="JS/General/Header.js"></script>
+   
+   <!-- Scripts de la Pagina   -->
+    <script defer  src="JS/PagesJS/Practica_IF.js"></script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
