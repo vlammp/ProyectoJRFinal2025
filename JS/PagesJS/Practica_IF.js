@@ -21,3 +21,18 @@ function verificarEdad() {
     }
     
 }
+
+function verificarParImpar() {
+    let numero3 = document.getElementById('numero3').value;
+
+    let numeroconvertido = parseInt(numero3)
+
+    if (numeroconvertido % 2 === 0) {
+        
+        alert(" Es par ")
+    } else {
+        alert(" No es  par ")
+    }
+
+    console.log(numeroconvertido)
+}
