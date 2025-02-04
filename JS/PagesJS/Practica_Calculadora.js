@@ -20,6 +20,14 @@ function realizarSuma() {
    let numero1 = document.getElementById('numero1').value;//gi
    let numero2 = document.getElementById('numero2').value;
 
+   //LS , LO , LA
+   //Typescript int decimal
+   //ParseInt 
+   let Suma = parseInt(numero1)  + parseInt(numero2) ;
+
+   document.getElementById('resultado').innerText = Suma;
+
    console.log(numero1)
    console.log(numero2)
+   console.log(Suma)
 }
