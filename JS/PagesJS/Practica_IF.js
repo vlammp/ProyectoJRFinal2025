@@ -14,10 +14,10 @@ function verificarEdad() {
     
     if (edad >= 18) {
 
-        alert(`Eres mayor de edad `)
+        alert(`Eres mayor de edad en ${pais} `)
     } else {
         
-        alert(`No eres mayor de edad `)
+        alert(`No eres mayor de edad en ${pais}`)
     }
     
 }
