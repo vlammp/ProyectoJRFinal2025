@@ -8,11 +8,11 @@
 export let Datos_LiNav = [
 
     {
-        Id: 1,
-        Nombre: "Inicio", 
-        Detalle: "Proyecto",   
-        Url: "Inicio.html",
-        Activo: true
+        Id: 1, // Numero 
+        Nombre: "Inicio", //Nombre que ve el usuario 
+        Detalle: "Proyecto",   // Practica o si es proyecto 
+        Url: "Inicio.html", // ruta de la pagina 
+        Activo: true // es para visualizar o ocultar la pagina 
     },
     {   Id: 2,
         Nombre: "Calculadora",
@@ -30,7 +30,7 @@ export let Datos_LiNav = [
         Nombre: "Tarea Pokemon",   
         Detalle: "Practica",  
         Url: "/Practica_TareaPokemon.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 5,
         Nombre: "Tarea Netflix",    
@@ -66,13 +66,13 @@ export let Datos_LiNav = [
         Nombre: "Practica IF",    
         Detalle: "Practica ", 
         Url: "/Practica_IF.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 12,
         Nombre: "Practica CICLO",    
         Detalle: "Practica ", 
         Url: "/Practica_CICLO.html",
-        Activo: true
+        Activo: false
     },
 ];
 
