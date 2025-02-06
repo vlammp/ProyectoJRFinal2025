@@ -66,11 +66,11 @@ function Filtrar() {
 
 
 function buscarDesdeInput() {
-  let input1 = document.getElementById('buscarNombre').value;  //Metio el valor pepe
+  let input1 = document.getElementById('buscarNombre').value.trim();  //Metio el valor pepe
   let resultado = document.getElementById('resultadoBusqueda');
 
   //Busca en el arreglo 
-  let busqueda = personas.find(x=> x.nombre === input1) //nombre == pepe
+  let busqueda = personas.find(x=> x.nombre.toUpperCase() === input1.toUpperCase()) //nombre == pepe
 
 
   //Aqui le indicamos si el resultado es verdadero o falso 
