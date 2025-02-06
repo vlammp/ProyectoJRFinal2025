@@ -82,3 +82,23 @@ function buscarDesdeInput() {
     resultado.innerHTML = `No encontrado a la persona`
   }
 }
+
+//Crear la funcion del onclick //check 
+// Input id value //no tiene 
+//  mostrar el resultado inner 
+
+function primeraPersonaActiva() {
+    let resultado = document.getElementById('resultadoActivo');//inner 
+
+    let busqueda = personas.find(x=> x.activo == true)
+  //Aqui le indicamos si el resultado es verdadero o falso 
+  if (busqueda) {
+    
+    resultado.innerHTML = `primera persona encontrada  ${busqueda.nombre}`
+
+  } else {
+    resultado.innerHTML = `No se encontro nadie activo `
+  }
+
+}
+
