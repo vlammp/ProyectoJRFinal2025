@@ -23,9 +23,6 @@
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script> 
 
 </head>
 
@@ -48,13 +45,7 @@
 
         <!-- Inicio: Main  -->
         <main class="mt-5">
-            <!-- Incluye botones de filtro y descarga linea 51-56 -->
-            <div class="form-group">
-                <input type="text" class="form-control" id="IdBusqueda" placeholder="Buscar Empleado..." onkeyup="ConsultarDatos()">
-                <button class="form-control" onclick="exportToExcel()">Descargar Excel</button>
-                <button class="form-control" onclick="exportToPDF()">Descargar PDF</button>
-            </div>
-
+        
             <div class="container  ">
                 <div class="col-md-12">
                     <h2 class="text-center mt-4">Tabla de Datos</h2>
