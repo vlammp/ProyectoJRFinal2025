@@ -24,9 +24,10 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="shortcut icon" href="Assets/favicon.ico" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <!-- paso 1  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script> 
-
+<!-- fin paso 1 -->
 </head>
 
 <body>
@@ -48,18 +49,20 @@
 
         <!-- Inicio: Main  -->
         <main class="mt-5">
+                <!-- paso 2  -->
                 <!-- Incluye botones de filtro y descarga linea 51-56 -->
                 <div class="form-group">
                     <input type="text" class="form-control" id="IdBusqueda" placeholder="Buscar Empleado..." onkeyup="ConsultarDatos()">
                     <button class="form-control" onclick="exportToExcel()">Descargar Excel</button>
                     <button class="form-control" onclick="exportToPDF()">Descargar PDF</button>
                 </div>
+                 <!-- fin paso 2  -->
     
             <div class="container  ">
                 <div class="col-md-12">
                     <h2 class="text-center mt-4">Tabla de Datos</h2>
                     <div class="table-responsive">
-                        <table class="table table-bordered table-striped text-center" id="ttabla">
+                        <table class="table table-bordered table-striped text-center" id="ttabla"><!-- paso 3 crear id con ese nombre  -->
                             <thead class="thead-dark">
                                 <tr>
                                     <th>Nombre</th>
@@ -67,7 +70,7 @@
                                     <th>Foto</th>
                                 </tr>
                             </thead>
-                            <tbody id="tbody">
+                            <tbody id="tbody"><!-- paso 4 crear id con ese nombre  -->
                                 <tr>
                                     <td>Juan Pérez</td>
                                     <td>bla bla bla </td>
@@ -104,7 +107,7 @@
     <script type="module" src="JS/General/Header.js"></script>
    
    <!-- Scripts de la Pagina   quitar type="module" -->
-    <script  src="JS/PagesJS/Practica_Listado_Clientes.js"></script>
+    <script  src="JS/PagesJS/Practica_Listado_Clientes.js"></script><!-- paso 5 quitar type="module" -->
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
