@@ -63,3 +63,22 @@ function Filtrar() {
     let valor = document.getElementById('sensitivo').value; //gi
     console.log(valor)
 }
+
+
+function buscarDesdeInput() {
+  let input1 = document.getElementById('buscarNombre').value;  //Metio el valor pepe
+  let resultado = document.getElementById('resultadoBusqueda');
+
+  //Busca en el arreglo 
+  let busqueda = personas.find(x=> x.nombre === input1) //nombre == pepe
+
+
+  //Aqui le indicamos si el resultado es verdadero o falso 
+  if (busqueda) {
+    
+    resultado.innerHTML = `encontrado a la persona ${busqueda.nombre}`
+
+  } else {
+    resultado.innerHTML = `No encontrado a la persona`
+  }
+}
