@@ -64,7 +64,7 @@ function Filtrar() {
     console.log(valor)
 }
 
-
+//caso 1
 function buscarDesdeInput() {
   let input1 = document.getElementById('buscarNombre').value.trim();  //Metio el valor pepe
   let resultado = document.getElementById('resultadoBusqueda');
@@ -86,7 +86,7 @@ function buscarDesdeInput() {
 //Crear la funcion del onclick //check 
 // Input id value //no tiene 
 //  mostrar el resultado inner 
-
+//caso 2
 function primeraPersonaActiva() {
     let resultado = document.getElementById('resultadoActivo');//inner 
 
@@ -104,3 +104,24 @@ function primeraPersonaActiva() {
 
 }
 
+//Crear la funcion del onclick  
+// Input id value 
+//  mostrar el resultado inner 
+//caso 6
+
+function personasActivas() {
+    let resultado = document.getElementById('listaActivos');
+
+    personas.forEach(element => {
+        
+        if (element.activo == true) {
+            
+          resultado.innerHTML += `
+          
+            <li>nombre : ${element.nombre} </li>`
+          
+            
+        }
+
+    });
+}
