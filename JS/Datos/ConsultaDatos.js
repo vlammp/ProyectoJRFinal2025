@@ -66,13 +66,13 @@ export let Datos_LiNav = [
         Nombre: "Practica IF",    
         Detalle: "Practica ", 
         Url: "/Practica_IF.html",
-        Activo: false
+        Activo: true
     },
     {   Id: 12,
         Nombre: "Practica CICLO",    
         Detalle: "Practica ", 
         Url: "/Practica_CICLO.html",
-        Activo: false
+        Activo: true
     },
 ];
 
