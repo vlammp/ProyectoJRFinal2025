@@ -117,7 +117,7 @@ function personasActivas() {
         if (element.activo == true) {
             
           resultado.innerHTML += `
-          
+
             <li>nombre : ${element.nombre} </li>`
           
             
@@ -125,3 +125,8 @@ function personasActivas() {
 
     });
 }
+
+//entregable 2 proyecto hoy 
+
+//3-4-5
+//Entregable 3 Proyecto 10 febrero a las 12 pm
