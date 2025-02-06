@@ -91,6 +91,8 @@ function primeraPersonaActiva() {
     let resultado = document.getElementById('resultadoActivo');//inner 
 
     let busqueda = personas.find(x=> x.activo == true)
+
+    
   //Aqui le indicamos si el resultado es verdadero o falso 
   if (busqueda) {
     
