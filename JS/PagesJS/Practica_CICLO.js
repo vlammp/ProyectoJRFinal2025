@@ -47,3 +47,14 @@ Clientes.forEach(element => {
 
 });
 
+//Contar Cantidad de elementos de un array 
+console.log(personas.length)
+
+//Filtrar por una propiedad 
+let buscarnombre = personas.find(x =>x.nombre === "Ana" )
+
+console.log(buscarnombre)
+
+let buscaractivo = personas.find(x =>x.activo === true )
+
+console.log(buscaractivo)
