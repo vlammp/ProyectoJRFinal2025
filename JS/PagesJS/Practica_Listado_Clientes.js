@@ -11,11 +11,32 @@ let Datos_Locales = [
 
 let contenedor = document.getElementById('tbody');
 
-
+Mostrar_CampoTabla()
 
 function Mostrar_CampoTabla() {
     
     let html = ""
+    
+    Datos_Locales.forEach(element => {
+        
+        console.log(element)
+
+        html += `
+        
+         <tr>
+            <td> ${element.id} </td>
+            <td> ${element.name} </td>
+            <td> ${element.email} </td>
+        
+        </tr>
+        
+        
+        `
+
+    });
+
+    contenedor.innerHTML = html
+
 }
 
 
