@@ -18,7 +18,7 @@ export let Datos_LiNav = [
         Nombre: "Calculadora",
         Detalle: "Practica",      
         Url: "/Practica_Calculadora.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 3,
         Nombre: "Listado Clientes", 
@@ -30,7 +30,7 @@ export let Datos_LiNav = [
         Nombre: "Tarea Pokemon",   
         Detalle: "Practica",  
         Url: "/Practica_TareaPokemon.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 5,
         Nombre: "Tarea Netflix",    
@@ -48,7 +48,7 @@ export let Datos_LiNav = [
         Nombre: "API_Listado_Cliente",    
         Detalle: "Proyecto", 
         Url: "/API_Listado_Clientes.html",
-        Activo: false
+        Activo: true
     },
     {   Id: 9,
         Nombre: "API_VerUsuario",    
@@ -66,13 +66,13 @@ export let Datos_LiNav = [
         Nombre: "Practica IF",    
         Detalle: "Practica ", 
         Url: "/Practica_IF.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 12,
         Nombre: "Practica CICLO",    
         Detalle: "Practica ", 
         Url: "/Practica_CICLO.html",
-        Activo: true
+        Activo: false
     },
 ];
 
