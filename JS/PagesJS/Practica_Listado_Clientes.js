@@ -9,15 +9,27 @@ let Datos_Locales = [
     { id: 4, name: "Ana Fernández", email: "ana.fernandez@example.com" }
 ];
 
+
+let DatosFiltrados = []
 let contenedor = document.getElementById('tbody');
 
-Mostrar_CampoTabla()
+
+DatosFiltrados = Datos_Locales
+
+//aela
+document.addEventListener('DOMContentLoaded', () => {
+    Mostrar_CampoTabla()
+
+});
+
+
+
 
 function Mostrar_CampoTabla() {
     
     let html = ""
     
-    Datos_Locales.forEach(element => {
+    DatosFiltrados.forEach(element => {
         
         console.log(element)
 
