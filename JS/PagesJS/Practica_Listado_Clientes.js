@@ -16,7 +16,7 @@ let contenedor = document.getElementById('tbody');
 
 DatosFiltrados = Datos_Locales
 
-//aela
+//aela Visualizar al ejecutar la pagina DOM
 document.addEventListener('DOMContentLoaded', () => {
     Mostrar_CampoTabla()
 
