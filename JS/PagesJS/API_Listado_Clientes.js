@@ -11,7 +11,7 @@ const Api2 = "https://rickandmortyapi.com/api/character"
 let DatosFiltrados = []
 let DatosFiltrados2 = []
 let contenedor = document.getElementById('tbody');
-
+let contenedor2 = document.getElementById('tbody2'); //Crean contenido 
 
 //aela Visualizar al ejecutar la pagina DOM
 document.addEventListener('DOMContentLoaded', () => {
@@ -50,7 +50,7 @@ function consultarDatos2() {
         .then(result => {           //3- Resultado  result
             // custom error
             console.log(result.results)
-        
+            Mostrar_CampoTabla2()
         })
         .catch(error => {      ///4- Catch
             // common error
@@ -76,6 +76,34 @@ function Mostrar_CampoTabla() {
             <td> ${element.id} </td>
             <td> ${element.name} </td>
             <td> ${element.email} </td>
+        
+        </tr>
+        
+        
+        `
+
+    });
+
+    contenedor.innerHTML = html
+
+}
+
+
+
+function Mostrar_CampoTabla2() {
+    
+    let html = ""
+    
+    DatosFiltrados2.forEach(element => {
+        
+        console.log(element)
+
+        html += `
+        
+         <tr>
+
+            <td> ${element.name} </td>
+            <td> <img src="${element.image}" alt="">  </td>
         
         </tr>
         
