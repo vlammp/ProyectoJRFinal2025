@@ -29,7 +29,7 @@ function consultarDatos() {
         .then(response => response.json()) // 2 -Conversion de datos , JSON 
         .then(result => {           //3- Resultado  result
             // custom error
-            console.log(result)
+           // console.log(result)
             DatosFiltrados = result
             Mostrar_CampoTabla()
         })
@@ -49,7 +49,8 @@ function consultarDatos2() {
         .then(response => response.json()) // 2 -Conversion de datos , JSON 
         .then(result => {           //3- Resultado  result
             // custom error
-            console.log(result.results)
+           // console.log(result.results)
+           DatosFiltrados2 = result.results
             Mostrar_CampoTabla2()
         })
         .catch(error => {      ///4- Catch
@@ -68,7 +69,7 @@ function Mostrar_CampoTabla() {
     
     DatosFiltrados.forEach(element => {
         
-        console.log(element)
+      
 
         html += `
         
@@ -94,16 +95,16 @@ function Mostrar_CampoTabla2() {
     
     let html = ""
     
-    DatosFiltrados2.forEach(element => {
+    DatosFiltrados2.forEach((element,index )=> {
         
         console.log(element)
 
         html += `
         
          <tr>
-
+            <td> ${index+1} </td>
             <td> ${element.name} </td>
-            <td> <img src="${element.image}" alt="">  </td>
+            <td> <img class="img-fluid w-25" src="${element.image}" alt="${element.name} "> </td>
         
         </tr>
         
@@ -112,6 +113,6 @@ function Mostrar_CampoTabla2() {
 
     });
 
-    contenedor.innerHTML = html
+    contenedor2.innerHTML = html
 
 }
