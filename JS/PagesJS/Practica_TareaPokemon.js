@@ -1,15 +1,7 @@
 // import {nombrePagina,Datos_Pokemon} from '../Datos/ConsultaDatos.js'
 console.log(`Funcionando Archivo:  Practica_TareaPokemon`);
 
-
-//aela
-document.addEventListener('DOMContentLoaded', (e) => {
-   
-    
-});
-
-
-
+// Datos locales simulando la API
  const Datos_Pokemon = [
     {
       Nombre: "Bulbasaur",
@@ -57,3 +49,96 @@ document.addEventListener('DOMContentLoaded', (e) => {
       Descripcion: "Blastoise es la evolución final de Squirtle y se distingue por los poderosos cañones de agua en su caparazón. Puede disparar agua a alta presión con una fuerza devastadora, capaz de perforar acero. Es un Pokémon muy resistente y su estrategia en combate se basa en la combinación de su gran defensa y ataques de agua a larga distancia."
     }
 ];
+
+let Datos_Locales =[]
+
+
+// Variable para el contenedor
+let Contenedor = document.getElementById('IdMostrarPokemon');  
+let ContenedorTabla = document.getElementById('ttabla');
+let DatosFiltrados = [];
+
+
+Datos_Locales = Datos_Pokemon
+
+//aela
+document.addEventListener('DOMContentLoaded', () => {
+
+
+});
+
+
+
+
+function ConsultarDatos() {
+  Filtrar_Datos()
+}
+
+
+  function Filtrar_Datos() {    
+    let inputBusqueda = document.getElementById('IdBusqueda').value.trim().toLowerCase();
+    
+    if (Datos_Locales.length > 0) {
+        DatosFiltrados = inputBusqueda.length > 0 
+            ? Datos_Locales.filter(element => element.Nombre.toLowerCase().includes(inputBusqueda))
+            : Datos_Locales;
+    }
+    
+    if (DatosFiltrados.length === 0) {
+        Contenedor.innerHTML = "<tr><td colspan='3'>No se encontraron datos</td></tr>";
+        return;
+    }
+
+    Mostrar_TodosPokemon();
+}
+
+  
+  function Mostrar_TodosPokemon() {    
+  
+      let html = ""; // Variable para acumular el HTML
+  
+      DatosFiltrados.forEach(element => {
+          html += 
+
+         `       
+            <div class="col-md-4 mt-5">
+                <div class="card ">
+                    <img class="card-img-top img-fluid" src="${element.Imagen}" alt="Imagen de posicion 0">
+                    <div class="card-body">
+                        <h4 class="card-title">${element.Nombre}</h4>
+                        <p class="card-text texto-cortado">${element.Descripcion}</p>
+                        <div class="d-flex justify-content-center">
+                            <button onclick="" class="btn btn-danger">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    `;
+      });
+  
+      Contenedor.innerHTML = html; // Asignar todo el HTML al final
+      
+  
+  }
+
+
+  function Mostrar_UnPokemon(){
+   
+    
+    Contenedor.innerHTML = `
+    
+        
+      
+           <div class="col-md-4 mt-5">
+                  <div class="card ">
+                  <img class="card-img-top img-fluid" src="${Datos_Locales[0].Imagen}" alt="Imagen de posicion 0">
+                  <div class="card-body">
+                      <h4 class="card-title">${Datos_Locales[0].Nombre}</h4>
+                      <p class="card-text texto-cortado">${Datos_Locales[0].Descripcion}</p>
+                      <button class="btn btn-primary" onclick="">Ver Detalles</button>
+                  </div>
+              </div>
+          </div>
+      `;
+    }
+  

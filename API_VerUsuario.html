@@ -44,15 +44,34 @@
 
         <!-- Inicio: Main  -->
         <main class="mt-5">
-            <div class="form-group">
-                <input type="text" class="form-control" id="IdBusqueda" placeholder="Buscar Pokémon..." onkeyup="Buscar_Pokemon()">
-            </div>
-            <button type="button" onclick="Mostrar_UnPokemon()" class="btn btn-secondary">Mostrar un pokemon</button>
+           
+            <button type="button" onclick="ConsultarDatos()" class="btn btn-danger ">Ver otro Usuario</button>
+           
+            
+            <div id="IdMostrarUsuario" class="row"></div>
 
-            <button type="submit" onclick="Mostrar_TodosPokemon()" class="btn btn-secondary">Mostrar Todos</button>
-            
-            
-            <div id="IdMostrarPokemon" class="row"></div>
+                        
+                <!-- Modal -->
+                <div class="modal fade" id="modalusuario" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                            </div>
+                            <div class="modal-body" id="modal-body">
+                                Body
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
         </main>
         <!-- Fin: Main  -->

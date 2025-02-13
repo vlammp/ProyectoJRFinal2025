@@ -43,14 +43,15 @@
 
 
         <!-- Inicio: Main  -->
-        <main class="mt-5">
+          <!-- Inicio: Main  -->
+          <main class="mt-5">
             <div class="form-group">
-                <input type="text" class="form-control" id="IdBusqueda" placeholder="Buscar Pokémon..." onkeyup="Buscar_Pokemon()">
+                <input type="text" class="form-control" id="IdBusqueda" placeholder="Buscar Pokémon..." onkeyup="ConsultarDatos()">
             </div>
-            <button type="button" onclick="Mostrar_UnPokemon()" class="btn btn-secondary">Mostrar un pokemon</button>
 
-            <button type="submit" onclick="Mostrar_TodosPokemon()" class="btn btn-secondary">Mostrar Todos</button>
-            
+            <button type="submit" onclick="ConsultarDatos()" class="btn btn-secondary">Mostrar Todos</button>
+
+           
             
             <div id="IdMostrarPokemon" class="row"></div>
 

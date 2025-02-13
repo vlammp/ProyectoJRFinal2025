@@ -45,7 +45,73 @@
         <!-- Inicio: Main  -->
         <main class="mt-5">
            
-
+            <div class="container my-5">
+                <h1 class="text-center text-danger">Tarea: Temática de Netflix</h1>
+                <hr class="bg-danger">
+            
+                <!-- Ejercicio 1 -->
+                <div class="mb-4">
+                  <h2>1. Saludo de Bienvenida</h2>
+                  <button onclick="BienvenidaNetflix()" type="button" class="btn btn-danger">Ver Saludo</button>
+                </div>
+            
+                <!-- Ejercicio 2 -->
+                <div class="mb-4">
+                  <h2>2. Recomendación de Serie</h2>
+                  <button onclick="RecomendarSerie()" type="button" class="btn btn-warning">Recomendar una Serie</button>
+                  <button onclick="RecomendarSerie('The Witcher')" type="button" class="btn btn-secondary">Recomendar otra Serie</button>
+                </div>
+            
+                <!-- Ejercicio 3 -->
+                <div class="mb-4">
+                  <h2>3. Mostrar Perfil del Usuario</h2>
+                  <button onclick="MostrarPerfil('Jane Doe', 'jane.doe@example.com')" type="button" class="btn btn-primary">Mostrar Perfil</button>
+                </div>
+            
+                <!-- Ejercicio 4 -->
+                <div class="mb-4">
+                  <h2>4. Activar Modo Oscuro</h2>
+                  <button onclick="NetflixNightMode()" type="button" class="btn btn-dark">Activar Modo Oscuro</button>
+                </div>
+            
+                <!-- Ejercicio 5 -->
+                <div class="mb-4">
+                  <h2>5. Activar Modo Claro</h2>
+                  <button onclick="NetflixDayMode()" type="button" class="btn btn-light">Activar Modo Claro</button>
+                </div>
+            
+                <!-- Ejercicio 6 -->
+                <div class="mb-4">
+                  <h2>6. Calcular Tiempo de Maratón</h2>
+                  <button onclick="CalcularMaraton(3, 60)" type="button" class="btn btn-success">Calcular Tiempo</button>
+                </div>
+            
+                <!-- Ejercicio 7 -->
+                <div class="mb-4">
+                  <h2>7. Dividir Episodios en Días</h2>
+                  <button onclick="DividirEpisodios(12, 4)" type="button" class="btn btn-info">Dividir Episodios</button>
+                </div>
+            
+                <!-- Ejercicio 8 -->
+                <div class="mb-4">
+                  <h2>8. Crear Perfil de Usuario</h2>
+                  <form id="formCrearPerfil">
+                    <div class="form-group">
+                      <label for="nombreUsuario">Nombre</label>
+                      <input type="text" id="nombreUsuario" class="form-control" placeholder="Nombre del Usuario" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="emailUsuario">Correo Electrónico</label>
+                      <input type="email" id="emailUsuario" class="form-control" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="edadUsuario">Edad</label>
+                      <input type="number" id="edadUsuario" class="form-control" placeholder="Edad" min="1" required>
+                    </div>
+                    <button type="button" onclick="CrearPerfil()" class="btn btn-danger">Crear Perfil</button>
+                  </form>
+                </div>
+              </div>
         </main>
         <!-- Fin: Main  -->
     </div>
@@ -67,7 +133,7 @@
     <script type="module" src="JS/General/Header.js"></script>
    
    <!-- Scripts de la Pagina   -->
-    <script type="module" src="JS/PagesJS/Practica_TareaNetflix.js"></script>
+    <script src="JS/PagesJS/Practica_TareaNetflix.js"></script>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
